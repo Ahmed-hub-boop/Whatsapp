@@ -1,0 +1,32 @@
+:root{
+    --maincolor:#1f2c34;
+}
+body{
+    background-color: black;
+}
+.ch{
+    background-color: #121b22;
+}
+.menuu{
+    background-color: #121b22;
+    color: white;
+}
+.menuu span:hover{
+    color: black;
+}
+.chat{
+    color: white;
+}
+.chat:hover p,.chat:hover span{
+    color: rgb(0, 0, 0);
+}
+.count,.time .count{
+    background-color: #008069;
+    color: var(--maincolor);
+}
+.chats p{
+    color: #008069;
+}
+.hd-2 .c-l span::before{
+    background-color: #008069;
+}
