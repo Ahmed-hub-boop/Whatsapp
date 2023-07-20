@@ -30,3 +30,17 @@ body{
 .hd-2 .c-l span::before{
     background-color: #008069;
 }
+
+.stt{
+    background-color: #121b22;
+}
+.stt span ,.stt p ,div{
+    color: white;
+}
+.add-ico{
+    border: 2.5px solid #121b22;
+    background-color: #008069;
+}
+.call{
+    background-color: #121b22;
+}

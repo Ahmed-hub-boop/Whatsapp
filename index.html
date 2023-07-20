@@ -11,7 +11,7 @@
     <body>
         <section>
             <div class="main-cont">
-                <nav class="hd">
+                <nav class="hd" id="hd">
                     <div class="hd-1">
                         <span class="logo">WhatsApp</span>
                         <span class="hd-ico">
@@ -26,13 +26,13 @@
                         </span>
                         <div class="c-l">
                             <span class="chats">
-                                <a href="">
+                                <a onclick="shchats()">
                                     <p>Chats</p><div class="count">50</div>
                                 </a>
                             </span>
-                            <span class="status"><a href="">Status</a></span>
+                            <span class="status"><a onclick="shstat()">Status</a></span>
                             <span class="calls">
-                                <a href="">
+                                <a onclick="shcalles()">
                                     <p>Calls</p><div class="count">10</div>
                                 </a>
                             </span>
@@ -47,6 +47,16 @@
                     <span id="nm" onclick="tonight()">Night mood</span>
                     <span id="lm" onclick="tolight()">Light mood</span>
                     <span>Settings</span>
+                </div>
+                <div class="intro" id="intro">
+                    <div class="int-1">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="int-2"></div>
+                    <div class="int-3">
+                        <span>from</span>
+                        <p><i class="fa-brands fa-meta"></i> Meta</p>
+                    </div>
                 </div>
                 <div class="ch" id="ch" onclick="rmenu()">
                     <div class="chat">
@@ -63,8 +73,68 @@
                         </div>
                     </div>
                 </div>
+                <div class="stt" id="st" onclick="rmenu()">
+                    <div class="add-stat">
+                        <div class="add-1">
+                            <img style="border-radius: 50%;" height="60px" width="60px" src="https://scontent.fcai19-8.fna.fbcdn.net/v/t1.30497-1/143086968_2856368904622192_1959732218791162458_n.png?_nc_cat=1&amp;cb=99be929b-3346023f&amp;ccb=1-7&amp;_nc_sid=7206a8&amp;_nc_eui2=AeGdiUFujg0BX6-q6QLgndAsso2H55p0AlGyjYfnmnQCUXRMNUtXnSbKTQ8fdYaWGEwGwIlA4JDlwoZDmnvnsTN6&amp;_nc_ohc=DH2e7R2-NdgAX9946MK&amp;_nc_ht=scontent.fcai19-8.fna&amp;oh=00_AfAhDq760ROi2uJBuRvZBRTsN1cdQgjccIpkHw9w3jW-Dg&amp;oe=64D28FB8">
+                            <span class="add-ico"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                        <div class="add-2">
+                            <span>My status</span>
+                            <p>Tap to add status update</p>
+                        </div>
+                    </div>
+                    <div class="tit">Recent updates</div>
+                    <div class="n-stat">
+                        <div class="n-1">
+                            <span>
+                                <img src="photo_2023-07-11_05-23-20 (2).jpg">
+                            </span>
+                        </div>
+                        <div class="n-2">
+                            <span>Friend Name</span>
+                            <p>Yesterday, 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="n-stat">
+                        <div class="n-1">
+                            <span>
+                                <img src="photo_2023-07-11_05-23-20 (2).jpg">
+                            </span>
+                        </div>
+                        <div class="n-2">
+                            <span>Friend Name</span>
+                            <p>Yesterday, 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="n-stat">
+                        <div class="n-1">
+                            <span>
+                                <img src="photo_2023-07-11_05-23-20 (2).jpg">
+                            </span>
+                        </div>
+                        <div class="n-2">
+                            <span>Friend Name</span>
+                            <p>Yesterday, 12:00 AM</p>
+                        </div>
+                    </div>
+                    <div class="tit">Viewed updates</div>
+                    <div class="v-stat" id="v-s"></div>
+                </div>
+                <div class="call" id="ca" onclick="rmenu()">
+                    <div class="cr-call">
+                        <div class="link">
+                            <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div class="cr-txt">
+                            <span>Create call link</span>
+                            <p>Share a link for your WhatsApp call</p>
+                        </div>
+                    </div>
+                    <div class="tit">Recent</div>
+                    <div class="call-cont" id="callcont"></div>
+                </div>
             </div>
         </section>
-    </body>
-    <script src="java.js"></script>
+    </body><script src="java.js"></script>
 </html>
